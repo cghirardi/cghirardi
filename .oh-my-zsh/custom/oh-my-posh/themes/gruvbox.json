@@ -9,6 +9,7 @@
           "foreground": "#ffffff",
           "style": "powerline",
           "template": "{{ if .WSL }}WSL at{{ end }} {{.Icon}} ",
+          "powerline_symbol": "\ue7ad",
           "type": "os"
         },
         {
