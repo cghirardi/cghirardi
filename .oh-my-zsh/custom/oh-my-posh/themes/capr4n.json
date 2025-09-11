@@ -35,7 +35,6 @@
           },
           "style": "diamond",
           "template": "{{if .Root}} \uf0e7 {{.UserName}} {{else}} {{.UserName}} {{end}}",
-          "trailing_diamond": "\ue0b0",
           "type": "session"
         },
         {
