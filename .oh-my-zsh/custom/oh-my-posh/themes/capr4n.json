@@ -28,15 +28,12 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#61AFEF",
+          "type": "aws",
+          "style": "powerline",
+          "powerline_symbol": "",
           "foreground": "#ffffff",
-          "properties": {
-            "display_host": false
-          },
-          "style": "diamond",
-          "template": "{{if .Root}} \uf0e7 {{.UserName}} {{else}} {{.UserName}} {{end}}",
-          "trailing_diamond": "\ue0b0",
-          "type": "session"
+          "background": "#FFA400",
+          "template": "  {{.Profile}}{{if .Region}}@{{.Region}}{{end}}"
         },
         {
           "background": "#C678DD",
@@ -59,14 +56,6 @@
           "style": "powerline",
           "template": " {{ .HEAD }} ",
           "type": "git"
-        },
-        {
-          "type": "aws",
-          "style": "powerline",
-          "powerline_symbol": "",
-          "foreground": "#ffffff",
-          "background": "#FFA400",
-          "template": "  {{.Profile}}{{if .Region}}@{{.Region}}{{end}}"
         }
       ],
       "type": "prompt"
