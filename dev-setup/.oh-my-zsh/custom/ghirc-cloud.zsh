@@ -1,4 +1,4 @@
-eval "$(oh-my-posh init zsh --config 'https://raw.githubusercontent.com/cghirardi/cghirardi/refs/heads/main/.oh-my-posh/themes/capr4n.ghirc.json')"
+eval "$(oh-my-posh init zsh --config 'https://raw.githubusercontent.com/cghirardi/cghirardi/refs/heads/main/dev-setup/.oh-my-posh/themes/capr4n.ghirc.json')"
 
 export PATH=/apollo/env/envImprovement/bin:$HOME/.toolbox/bin:$HOME/.cargo/bin:$PATH
 export PATH=/apollo/env/ApolloCommandLine/bin:$PATH
