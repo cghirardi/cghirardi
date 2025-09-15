@@ -9,6 +9,9 @@
           "foreground": "#ffffff",
           "style": "plain",
           "template": " \ue641 {{ .CurrentDate | date .Format }} ",
+          "properties": {
+             "time_format": "15:04:05pm"
+          },
           "type": "time"
         },
         {
