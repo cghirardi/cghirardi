@@ -1,38 +1,24 @@
 {
   "$schema": "https://raw.githubusercontent.com/cghirardi/cghirardi/refs/heads/main/dev-setup/.oh-my-posh/themes/schema.json",
+  "palette": {
+    "os-background": "#61AFEF",
+    "os-foreground": "#ffffff",
+    "path-background": "#C678DD",
+    "path-foreground": "#ffffff",
+    "git-background": "#95ffa4",
+    "git-foreground": "#193549",
+    "time-background": "#003543",
+    "time-foreground": "#ffffff",
+    "executiontime-background": "#83769c",
+    "executiontime-foreground": "#ffffff"
+  },
   "blocks": [
-    {
-      "alignment": "right",
-      "segments": [
-        {
-          "background": "#003543",
-          "foreground": "#ffffff",
-          "style": "plain",
-          "template": " \ue641 {{ .CurrentDate | date .Format }} ",
-          "properties": {
-            "time_format": "15:04:05pm"
-          },
-          "type": "time"
-        },
-        {
-          "background": "#83769c",
-          "foreground": "#ffffff",
-          "properties": {
-            "always_enabled": true
-          },
-          "style": "plain",
-          "template": " \ueba2 {{ .FormattedMs }} ",
-          "type": "executiontime"
-        }
-      ],
-      "type": "rprompt"
-    },
     {
       "alignment": "left",
       "segments": [
         {
-          "background": "#DA627D",
-          "foreground": "#ffffff",
+          "background": "p:os-background",
+          "foreground": "p:os-foreground",
           "properties": {
             "display_host": false
           },
@@ -42,8 +28,8 @@
           "type": "session"
         },
         {
-          "background": "#86BBD8",
-          "foreground": "#ffffff",
+          "background": "p:path-background",
+          "foreground": "p:path-foreground",
           "powerline_symbol": "\ue0b0",
           "properties": {
             "folder_icon": "\uf115",
@@ -59,8 +45,8 @@
           "type": "path"
         },
         {
-          "background": "#FCA17D",
-          "foreground": "#193549",
+          "background": "p:git-background",
+          "foreground": "p:git-foreground",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
           "template": " {{ .HEAD }} ",
@@ -68,10 +54,35 @@
         }
       ],
       "type": "prompt"
+    },
+    {
+      "alignment": "right",
+      "segments": [
+        {
+          "background": "p:time-background",
+          "foreground": "p:time-background",
+          "style": "plain",
+          "template": " \ue641 {{ .CurrentDate | date .Format }} ",
+          "properties": {
+            "time_format": "15:04:05pm"
+          },
+          "type": "time"
+        },
+        {
+          "background": "p:executiontime-background",
+          "foreground": "p:executiontime-foreground",
+          "properties": {
+            "always_enabled": true
+          },
+          "style": "plain",
+          "template": " \ueba2 {{ .FormattedMs }} ",
+          "type": "executiontime"
+        }
+      ],
+      "type": "rprompt"
     }
   ],
   "console_title_template": "{{if .Root}} \u26a1 {{end}}{{.UserName}} \u2794 📁{{.Folder}}",
   "final_space": true,
   "version": 3
 }
-
