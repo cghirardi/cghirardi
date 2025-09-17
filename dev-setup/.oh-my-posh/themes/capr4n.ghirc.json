@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "$schema": "https://raw.githubusercontent.com/cghirardi/cghirardi/refs/heads/main/dev-setup/.oh-my-posh/themes/schema.json",
   "blocks": [
     {
       "alignment": "right",
@@ -31,15 +31,15 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#61AFEF",
+          "background": "#DA627D",
           "foreground": "#ffffff",
           "properties": {
             "display_host": false
           },
           "style": "diamond",
-          "template": " \uf270 ",
+          "template": " {{.Icon}} ",
           "trailing_diamond": "\ue0b0",
-          "type": "session"
+          "type": "os"
         },
         {
           "background": "#C678DD",
