@@ -10,7 +10,7 @@
           "style": "plain",
           "template": " \ue641 {{ .CurrentDate | date .Format }} ",
           "properties": {
-             "time_format": "15:04:05pm"
+            "time_format": "15:04:05pm"
           },
           "type": "time"
         },
@@ -37,12 +37,12 @@
             "display_host": false
           },
           "style": "diamond",
-          "template": " {{.Icon}} ",
+          "template": " \uf270 ",
           "trailing_diamond": "\ue0b0",
-          "type": "os"
+          "type": "session"
         },
         {
-          "background": "#C678DD",
+          "background": "#86BBD8",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "properties": {
@@ -50,16 +50,16 @@
             "folder_separator_icon": " \ue0b1 ",
             "max_depth": 3,
             "mapped_locations": {
-              "~/workplace": "~\\\uf015"
+              "~/workplace": " ~\\\uf015 "
             },
-            "style": "short"
+            "style": "full"
           },
           "style": "powerline",
-          "template": " {{ .Path }} ",
+          "template": "{{ .Path }}",
           "type": "path"
         },
         {
-          "background": "#95ffa4",
+          "background": "#FCA17D",
           "foreground": "#193549",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
