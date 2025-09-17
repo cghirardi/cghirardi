@@ -1,0 +1,88 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cghirardi/cghirardi/refs/heads/main/dev-setup/.oh-my-posh/themes/schema.json",
+  "palette": {
+    "os-background": "#DA627D",
+    "os-foreground": "#ffffff",
+    "path-background": "#86BBD8",
+    "path-foreground": "#ffffff",
+    "git-background": "#FCA17D",
+    "git-foreground": "#193549",
+    "time-background": "#003543",
+    "time-foreground": "#ffffff",
+    "executiontime-background": "#83769c",
+    "executiontime-foreground": "#ffffff"
+  },
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "background": "p:os-background",
+          "foreground": "p:os-foreground",
+          "properties": {
+            "display_host": false
+          },
+          "style": "diamond",
+          "template": " {{.Icon}} ",
+          "trailing_diamond": "\ue0b0",
+          "type": "os"
+        },
+        {
+          "background": "p:path-background",
+          "foreground": "p:path-foreground",
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "folder_icon": "\uf115",
+            "folder_separator_icon": " \ue0b1 ",
+            "max_depth": 3,
+            "mapped_locations": {
+              "~/workplace": " ~\\\uf015 "
+            },
+            "style": "full"
+          },
+          "style": "powerline",
+          "template": "{{ .Path }}",
+          "type": "path"
+        },
+        {
+          "background": "p:git-background",
+          "foreground": "p:git-foreground",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
+          "template": " {{ .HEAD }} ",
+          "type": "git"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "right",
+      "segments": [
+        {
+          "background": "p:time-background",
+          "foreground": "p:time-background",
+          "style": "plain",
+          "template": " \ue641 {{ .CurrentDate | date .Format }} ",
+          "properties": {
+            "time_format": "15:04:05pm"
+          },
+          "type": "time"
+        },
+        {
+          "background": "p:executiontime-background",
+          "foreground": "p:executiontime-foreground",
+          "properties": {
+            "always_enabled": true
+          },
+          "style": "plain",
+          "template": " \ueba2 {{ .FormattedMs }} ",
+          "type": "executiontime"
+        }
+      ],
+      "type": "rprompt"
+    }
+  ],
+  "console_title_template": "{{if .Root}} \u26a1 {{end}}{{.UserName}} \u2794 📁{{.Folder}}",
+  "final_space": true,
+  "version": 3
+}
