@@ -1,0 +1,7 @@
+# https://ant.apache.org/manual/listeners.html#AnsiColorLogger - AnsiColorLogger
+AnsiColorLogger.ERROR_COLOR=38;5;196m
+AnsiColorLogger.WARNING_COLOR=38;5;229m
+AnsiColorLogger.INFO_COLOR=38;5;231m
+AnsiColorLogger.VERBOSE_COLOR=38;5;117m
+AnsiColorLogger.DEBUG_COLOR=38;5;121m
+  
