@@ -33,7 +33,7 @@
           "powerline_symbol": "\ue0b0",
           "properties": {
             "folder_icon": "\uf115",
-            "folder_separator_icon": " ",
+            "folder_separator_icon": " \ue0b1 ",
             "max_depth": 3,
             "mapped_locations": {
               "~/workplace": " ~\\\uf015 "
