@@ -1,0 +1,6 @@
+[alias]
+b = "build brazil-build release"
+bs = "build --silent brazil-build release"
+crebase = "rebase --current-package"
+cpush = "push --current-package"
+cmerge = "merge --current-package"
