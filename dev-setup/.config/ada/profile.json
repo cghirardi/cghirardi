@@ -1,0 +1,11 @@
+{
+  "Profiles": [
+    {
+      "Provider": "isengard",
+      "Account": "768571909463",
+      "Role": "Admin",
+      "Partition": "aws",
+      "Profile": "trebuchet"
+    }
+  ]
+}
