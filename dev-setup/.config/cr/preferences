@@ -1,0 +1,9 @@
+{
+  "arguments.open_browser": "true",
+  "amend.enabled": "true",
+  "arguments.reviewers": "",
+  "issues.prompt": "true",
+  "issues.manage_issue_lifecycle": "false",
+  "internal.is_first_run": "false",
+  "issues.url_prefix": "https://taskei.amazon.dev/tasks/"
+}
