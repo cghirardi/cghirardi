@@ -67,47 +67,12 @@ bb() {
   fi
 }
 
-codews() {
-  code ./workspace.code-workspace
-}
-
-config() {
-  code ~/.zshrc
-  code $ZSH/custom/*.zsh
-  code /Users/ghirc/.config/ninja-dev-sync.json
-  code ~/.aws/*
-}
-
-cloudtun() {
-  PORT=${1:-8080}
-  ssh -f -N -L "$PORT:127.0.0.1:$PORT" "$CLOUD_HOST"
-  echo "Created tunnel to $CLOUD_HOST:$PORT"
-}
-
-rdp() {
-  cloudtun 3389
-}
-
 login() {
   kinit -f
   mwinit -o
 }
 
-# Alias for Ninja Dev Sync
-ninja() {
-  echo -e "The non-aliased command is: ${GREEN}ninja-dev-sync${NOCOLOR}"
-  ninja-dev-sync "$@"
-}
-
 sshkill() {
   ps aux | grep 8080
-}
-
-# Lists out all of the Amazon Brew taps
-taps() {
-  TAP=amazon/homebrew-amazon; \
-  TAP_PREFIX=$(brew --prefix)/Homebrew/Library/Taps; \
-  ls $TAP_PREFIX/$TAP/Formula/*.rb 2>/dev/null || ls $TAP_PREFIX/$TAP/*.rb 2>/dev/null | \
-  xargs -I{} basename {} .rbI
 }
 # endregion
